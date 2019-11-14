@@ -1,1 +1,0 @@
-Search.setIndex({docnames:["docs"],envversion:50,filenames:["docs.rst"],objects:{},objnames:{},objtypes:{},terms:{test:0},titles:["Getting Started"],titleterms:{get:0,start:0}})
