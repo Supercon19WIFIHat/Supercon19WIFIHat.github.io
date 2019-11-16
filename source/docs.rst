@@ -1,7 +1,10 @@
 Problems with module
 =========================
-Sadly, in wifi mode this module draws too much power from the badge and causes a reset.
-I have an updated firmware that only enables Bluetooth and Bluetooth LE.
+Sadly, this module draws too much power from the badge and causes a reset.
+It might be usefull as a PMOD on other projects.
+
+If you want a 3rd UART out the PMOD connector then take a look at the fpgasoc repo for an example of how to do this.
+
 
 Flashing your badge
 =========================
@@ -38,6 +41,7 @@ communication will be over a BLE spp.
 
 Comms notes
 ----------------------------
+::
 at+bleinit?      to get mode.
 at+bleinit=2     server mode. can advertise
 at+bleinit=1     client mode. can scan for advertisments
@@ -52,3 +56,12 @@ scan messages
 +BLESCAN:5f:a5:21:e5:5e:e4,-85,02011a020a0c0bff4c001006131ee4c60f3b,,1
 
 the response, address - rssi - adv data - scan rsp data - addr type
+
+
+advertising.
+
+at+bleadvstart
+
+module comes up in anther modules scan like this.
++BLESCAN:84:0d:8e:37:ae:5a,-67,,,0
+
