@@ -66,3 +66,7 @@ at+bleadvstart
 module comes up in anther modules scan like this.
 +BLESCAN:84:0d:8e:37:ae:5a,-67,,,0
 
+at+bleadvdata=
+
+turn echo off
+ate0
