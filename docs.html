@@ -165,8 +165,9 @@
             
   <div class="section" id="problems-with-module">
 <h1>Problems with module<a class="headerlink" href="#problems-with-module" title="Permalink to this headline">¶</a></h1>
-<p>Sadly, in wifi mode this module draws too much power from the badge and causes a reset.
-I have an updated firmware that only enables Bluetooth and Bluetooth LE.</p>
+<p>Sadly, this module draws too much power from the badge and causes a reset.
+It might be usefull as a PMOD on other projects.</p>
+<p>If you want a 3rd UART out the PMOD connector then take a look at the fpgasoc repo for an example of how to do this.</p>
 </div>
 <div class="section" id="flashing-your-badge">
 <h1>Flashing your badge<a class="headerlink" href="#flashing-your-badge" title="Permalink to this headline">¶</a></h1>
@@ -196,7 +197,8 @@ will be listening for other badges.</p>
 </div>
 <div class="section" id="comms-notes">
 <h2>Comms notes<a class="headerlink" href="#comms-notes" title="Permalink to this headline">¶</a></h2>
-<p>at+bleinit?      to get mode.
+<p>::
+at+bleinit?      to get mode.
 at+bleinit=2     server mode. can advertise
 at+bleinit=1     client mode. can scan for advertisments
 you need to set mode to 0 of you want to switch from server to client and vice versa</p>
@@ -208,6 +210,10 @@ the second arg is how many seconds to scan for before stopping</div></blockquote
 <p>scan messages
 +BLESCAN:5f:a5:21:e5:5e:e4,-85,02011a020a0c0bff4c001006131ee4c60f3b,,1</p>
 <p>the response, address - rssi - adv data - scan rsp data - addr type</p>
+<p>advertising.</p>
+<p>at+bleadvstart</p>
+<p>module comes up in anther modules scan like this.
++BLESCAN:84:0d:8e:37:ae:5a,-67,,,0</p>
 </div>
 </div>
 
