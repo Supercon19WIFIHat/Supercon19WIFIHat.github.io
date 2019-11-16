@@ -1,10 +1,7 @@
 Problems with module
 =========================
-Sadly, this module draws too much power from the badge and causes a reset.
-It might be usefull as a PMOD on other projects.
-
-If you want a 3rd UART out the PMOD connector then take a look at the fpgasoc repo for an example of how to do this.
-
+Sadly, in wifi mode this module draws too much power from the badge and causes a reset.
+I have an updated firmware that only enables Bluetooth and Bluetooth LE.
 
 Flashing your badge
 =========================
