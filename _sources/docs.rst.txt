@@ -42,6 +42,7 @@ communication will be over a BLE spp.
 Comms notes
 ----------------------------
 ::
+
 at+bleinit?      to get mode.
 at+bleinit=2     server mode. can advertise
 at+bleinit=1     client mode. can scan for advertisments
