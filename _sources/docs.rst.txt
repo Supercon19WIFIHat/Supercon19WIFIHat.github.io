@@ -1,6 +1,8 @@
 Problems with module
 =========================
 Sadly, this module draws too much power from the badge and causes a reset.
+You have to disconnect the the 3v3 pin of the PMOD and hook it up to the BAT pin and use fresh batteries.
+
 It might be usefull as a PMOD on other projects.
 
 If you want a 3rd UART out the PMOD connector then take a look at the fpgasoc repo for an example of how to do this.
@@ -24,7 +26,6 @@ Go here https://github.com/Supercon19WIFIHat/esp-at/blob/master/docs/ESP_AT_Comm
 
 Badge communication
 =============================
-
 
 Scanning
 -----------------------------
